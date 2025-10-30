@@ -10,66 +10,42 @@
   bottom=2cm
 ]{geometry}
 
+\usepackage{listings}
 \usepackage{multicol}
 
-\usepackage{array}
+\usepackage[super]{nth}
 
 \setlength{\parindent}{20pt}
 
+\setlength{\columnsep}{1cm}
 
 \usepackage{calc}
+
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
 
 % Define a macro for full-width dot fill with a tab stop at column 2
 \newcommand{\dotfillcols}[2]{%
   \noindent
-  \makebox[0pt][l]{#1}% Left text flush left
-  \leaders\hbox to .4em{\hss.\hss}\hfill
+  #1\leaders\hbox to .3em{\hss.\hss}\hfill
   \makebox[\dimexpr(\textwidth - \columnsep)/2\relax][l]{#2}\par
 }
 
-
-\setlength{\columnsep}{1cm}
-
-% Define a precise dotfill macro aligned with multicol columns
-\newcommand{\dotfillcolst}[2]{%
+\newcommand{\nofillcols}[2]{%
   \noindent
-  % width of one column:
-  \newlength{\colw}%
-  \setlength{\colw}{\dimexpr(\textwidth - \columnsep)/2\relax}%
-  %
-  \makebox[0pt][l]{#1}% left text (natural width)
-  \leaders\hbox to .4em{\hss.\hss}\hskip
-    \dimexpr(\colw - \widthof{#1})\relax
-  #2\par
+  #1\leaders\hbox to .3em{\hss \ \hss}\hfill
+  \makebox[\dimexpr(\textwidth - \columnsep)/2\relax][l]{#2}\par
 }
-
-\makeatletter
-\newcommand{\dotfillcolstt}[2]{%
-  % compute one column width
-  \newlength{\colw}%
-  \setlength{\colw}{\dimexpr(\textwidth - \columnsep)/2\relax}%
-  \newlength{\colawidth}
-  \setlength{\colawidth{\widthof{#1}}}
-  %
-  % measure #1 width
-  \settowidth{\@tempdima}{#1}%
-  %
-  \noindent
-  % print left text
-  #1%
-  % dotted fill to end of first column
-  \leaders\hbox to .4em{\hss.\hss}\hskip
-    \dimexpr(\colw - \@tempdima)\relax
-  % second column text
-  #2%
-  \par
-}
-\makeatother
-
 
 \newcommand{\action}[1]{\noindent{\large \textbf{\textsf{#1}}}}
 
 \newcommand{\actionspacing}[0]{\vspace{0.3cm}}
+
+\newcommand{\third}[0]{3\textsuperscript{rd}}
 
 \begin{document}
 
@@ -77,13 +53,13 @@
 
 \noindent\textit{Made a decision to turn our will and our lives over to the care of God as we understood him}
 
-\hrule
-
+\vspace{0.3cm}
+\hrule height 1pt
+\vspace{-0.1cm}
 \begin{multicols}{2}
-
 \action{Take Actions That Deflate Your Ego}\\
 \noindent 
-Yes, the $3^{rd}$ Step \textit{starts} with the phrase ``made a decision,''
+Yes, the \nth{3} Step \textit{starts} with the phrase ``made a decision,''
 but despite what some overly literal AAs will tell you, it cannot end there.
 Once you have made the decision, 
 you must take \textbf{ACTIONS} to turn over your will, 
@@ -146,18 +122,18 @@ there are as many different concepts of a higher power as there are people in AA
 I believe that the relief comes from the asking itself -- the explicit, verbal acknowledgment that reliance on your ego is not the answer. 
 Your belief may differ, but one thing is clear: it doesn't come without the asking.
 
-Here is a modernized, non-theist $3^{rd}$ step prayer:
-\textbf{``Thank you for keeping me sober. 
+Here is a modernized, non-theist \third step prayer:
+{\small \textbf{``Thank you for keeping me sober. 
 Please keep me sober today. 
 Relieve me of the bondage of self. 
 Show me how I can be of service. 
-Help me let go of my will.''}
+Help me let go of my will.''}}
 
 \actionspacing
 
 \action{Meditate} \\
 \noindent
-Don't wait until the $11^{th}$ step to start meditating.
+Don't wait until the \nth{11} step to start meditating.
 For alcoholics, the greatest benefit of meditation is the ability to quiet the ego through focus on the body in the moment.
 The ego tells stories, and stories require the past of the future;
 focusing on the present there \textit{automatically} reduces the influence of the ego.
@@ -181,36 +157,27 @@ I highly recommend reading Tara Brach's \textit{Radical Acceptance} when you sta
 
 \action{Do the Fourth Step} \\
 \noindent
-If you work a \textit{perfect} $3^{rd}$ step -- 
+If you work a \textit{perfect} \nth{3} step -- 
 completely turning over you will --
 the rest of the steps wouldn't be necessary.
-But you can't work a perfect $3^{rd}$,
+But you can't work a perfect \nth{3},
 so keep trying and move forward! 
-Think of step $3$ as a decision to turn over your will
+Think of step 3 as a decision to turn over your will
 \textit{by doing the rest of the steps}
 
 \end{multicols}
 
-\hrule
+\vspace{0.4cm}
+\hrule height 1pt
+\vspace{0.3cm}
 
-\dotfillcolstt{\action{Symptoms of self-will}}{\action{Signs that you are turning your will over}}
+\nofillcols{\action{Symptoms of self-will}}{\action{Signs that you are turning your will over}}
+\dotfillcols{You are getting upset.}{You are calm.}
+\dotfillcols{You are telling endless stories in your head.}{You are not plagued by stories.}
+\dotfillcols{You are justifying your actions -- to yourself or others.}{You feel no need to justify you actions.}
+\dotfillcols{You're making a lot of plans.}{You are focused on the \textit{next} right thing.}
+\dotfillcols{You think you can -- or should -- handle everything alone.}{You are open to help.}
+\dotfillcols{You argue with or reject the suggestions of others.}{you can let go and take suggestions without fear.}
 
-\begin{multicols}{2}
-\subsection*{Symptoms of self-will}
-You are getting upset
-You are telling endless stories in your head \\
-You are justifying your actions -- to yourself or others \\
-You're making a lot of plans \\
-You think you can -- or should -- handle everything alone \\
-You argue with or reject the suggestions of others
-\columnbreak
-\subsection*{Signs that you are turning your will over}
-You are calm. \\ 
-You are not plagued by stories. \\
-You feel no need to justify you actions. \\
-You are focused on the \textit{next} right thing. \\
-You are open to help. \\
-you can let go and take suggestions without fear.
-\end{multicols}
-
+\blfootnote{\lstinline{step3_sb_v1.pdf} testing}
 \end{document}
