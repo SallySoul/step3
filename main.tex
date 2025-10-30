@@ -1,7 +1,6 @@
 \documentclass[9pt]{extarticle}
 
-\pagenumbering{gobble}
-
+% Set margins
 \usepackage[
   letterpaper,
   left=2cm,
@@ -9,18 +8,21 @@
   top=2cm,
   bottom=2cm
 ]{geometry}
-
-\usepackage{listings}
-\usepackage{multicol}
-
-\usepackage[super]{nth}
-
 \setlength{\parindent}{20pt}
 
+% No page number
+\pagenumbering{gobble}
+
+%\lfoot{ \verb|step3_classic_v1.pdf| testing}
+
+% For multi-column environment
+\usepackage{multicol}
 \setlength{\columnsep}{1cm}
 
-\usepackage{calc}
+% Formatting for numbers with superscript
+\usepackage[super]{nth}
 
+% Allows us to have a footnote without a key
 \newcommand\blfootnote[1]{%
   \begingroup
   \renewcommand\thefootnote{}\footnote{#1}%
@@ -35,20 +37,19 @@
   \makebox[\dimexpr(\textwidth - \columnsep)/2\relax][l]{#2}\par
 }
 
+% Same as above but without dots
 \newcommand{\nofillcols}[2]{%
   \noindent
   #1\leaders\hbox to .3em{\hss \ \hss}\hfill
   \makebox[\dimexpr(\textwidth - \columnsep)/2\relax][l]{#2}\par
 }
 
+% In lieu of using sections / subsections
 \newcommand{\action}[1]{\noindent{\large \textbf{\textsf{#1}}}}
-
 \newcommand{\actionspacing}[0]{\vspace{0.3cm}}
 
-\newcommand{\third}[0]{3\textsuperscript{rd}}
 
 \begin{document}
-
 \noindent{\huge \textbf{\textsf{Step Three - HOW to turn over your will}}}
 
 \noindent\textit{Made a decision to turn our will and our lives over to the care of God as we understood him}
@@ -122,7 +123,7 @@ there are as many different concepts of a higher power as there are people in AA
 I believe that the relief comes from the asking itself -- the explicit, verbal acknowledgment that reliance on your ego is not the answer. 
 Your belief may differ, but one thing is clear: it doesn't come without the asking.
 
-Here is a modernized, non-theist \third step prayer:
+Here is a modernized, non-theist \nth{3} step prayer:
 {\small \textbf{``Thank you for keeping me sober. 
 Please keep me sober today. 
 Relieve me of the bondage of self. 
@@ -179,5 +180,7 @@ Think of step 3 as a decision to turn over your will
 \dotfillcols{You think you can -- or should -- handle everything alone.}{You are open to help.}
 \dotfillcols{You argue with or reject the suggestions of others.}{you can let go and take suggestions without fear.}
 
-\blfootnote{\lstinline{step3_sb_v1.pdf} testing}
+
+
+
 \end{document}
