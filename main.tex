@@ -1,0 +1,216 @@
+\documentclass[9pt]{extarticle}
+
+\pagenumbering{gobble}
+
+\usepackage[
+  letterpaper,
+  left=2cm,
+  right=2cm,
+  top=2cm,
+  bottom=2cm
+]{geometry}
+
+\usepackage{multicol}
+
+\usepackage{array}
+
+\setlength{\parindent}{20pt}
+
+
+\usepackage{calc}
+
+% Define a macro for full-width dot fill with a tab stop at column 2
+\newcommand{\dotfillcols}[2]{%
+  \noindent
+  \makebox[0pt][l]{#1}% Left text flush left
+  \leaders\hbox to .4em{\hss.\hss}\hfill
+  \makebox[\dimexpr(\textwidth - \columnsep)/2\relax][l]{#2}\par
+}
+
+
+\setlength{\columnsep}{1cm}
+
+% Define a precise dotfill macro aligned with multicol columns
+\newcommand{\dotfillcolst}[2]{%
+  \noindent
+  % width of one column:
+  \newlength{\colw}%
+  \setlength{\colw}{\dimexpr(\textwidth - \columnsep)/2\relax}%
+  %
+  \makebox[0pt][l]{#1}% left text (natural width)
+  \leaders\hbox to .4em{\hss.\hss}\hskip
+    \dimexpr(\colw - \widthof{#1})\relax
+  #2\par
+}
+
+\makeatletter
+\newcommand{\dotfillcolstt}[2]{%
+  % compute one column width
+  \newlength{\colw}%
+  \setlength{\colw}{\dimexpr(\textwidth - \columnsep)/2\relax}%
+  \newlength{\colawidth}
+  \setlength{\colawidth{\widthof{#1}}}
+  %
+  % measure #1 width
+  \settowidth{\@tempdima}{#1}%
+  %
+  \noindent
+  % print left text
+  #1%
+  % dotted fill to end of first column
+  \leaders\hbox to .4em{\hss.\hss}\hskip
+    \dimexpr(\colw - \@tempdima)\relax
+  % second column text
+  #2%
+  \par
+}
+\makeatother
+
+
+\newcommand{\action}[1]{\noindent{\large \textbf{\textsf{#1}}}}
+
+\newcommand{\actionspacing}[0]{\vspace{0.3cm}}
+
+\begin{document}
+
+\noindent{\huge \textbf{\textsf{Step Three - HOW to turn over your will}}}
+
+\noindent\textit{Made a decision to turn our will and our lives over to the care of God as we understood him}
+
+\hrule
+
+\begin{multicols}{2}
+
+\action{Take Actions That Deflate Your Ego}\\
+\noindent 
+Yes, the $3^{rd}$ Step \textit{starts} with the phrase ``made a decision,''
+but despite what some overly literal AAs will tell you, it cannot end there.
+Once you have made the decision, 
+you must take \textbf{ACTIONS} to turn over your will, 
+or that decision is meaningless.
+(i.e. ``faith without works is dead'').
+
+Turning over your will means reducing the influence of your ego.
+To deflate your ego, you must practice 
+\textbf{relinquishing control and letting go of stories}.
+
+Quieting the influence of your ego will feel unnatural
+and uncomfortable, and it will take conscious effot at first.
+But over time, through \textbf{PRACTICE}, it will get easier, 
+and eventually it will become second nature.
+
+\actionspacing
+
+\action{Ask for Help} \\
+\noindent
+However you found your way to your first meeting,
+you either explicitly or implicitly asked for help.
+This was the very first way you practiced turning over your will --
+when you acknowledged that you couldn't do it alone.
+
+Continue turning over your will by remembering 
+that you don't have to face \textit{any} problem alone. 
+If you have questions, ask them! If you need help, ask for it!
+If you have importance decisions to make, solicit advice from other sober people.
+
+\actionspacing
+
+\action{Take Suggestions} \\
+\noindent
+After asking for help, the next step in turning over your will is to act on the advice offered by those with more experience.
+Often the \textbf{ACTION of taking the suggestion} is as important as or more important than the text of the suggestion.
+The power you take away from your ego will bring relief.
+
+You may hear some crazy suggestions, but don't try to use those as evidence that taking suggestions is a bad idea in general;
+try to stick to those suggestions you hear a lot.
+Remember that shopping around for the piece of advice that you \textit{want} to hear 
+-- to justify what you've already decided to do -- is just another form of alchoholic self-will.
+
+Getting a sponsor formalized the process of taking suggestions,
+providing you with a person whose suggestions you agreed to take especially seriously.
+Sponsors will not abuse this privilege.
+If you trust your sponsor and treat his or her advice very gravely, you will experience relief from you ego's reflexive desire to control everything.
+
+%% NEXT COLUMN
+\columnbreak
+
+\action{Pray} \\
+\noindent
+Whether or not you believe in antihistamines,
+taking them will relieve allergy symptoms. 
+Prayer is alot like medicine: you don't need to believe it's going to work, or understand how it's going to work, to get the benefits.
+
+What, if anything, you pray to, is up to you;
+there are as many different concepts of a higher power as there are people in AA. But the on thing that AAs have in common is the \textbf{ACTION} of praying.
+
+I believe that the relief comes from the asking itself -- the explicit, verbal acknowledgment that reliance on your ego is not the answer. 
+Your belief may differ, but one thing is clear: it doesn't come without the asking.
+
+Here is a modernized, non-theist $3^{rd}$ step prayer:
+\textbf{``Thank you for keeping me sober. 
+Please keep me sober today. 
+Relieve me of the bondage of self. 
+Show me how I can be of service. 
+Help me let go of my will.''}
+
+\actionspacing
+
+\action{Meditate} \\
+\noindent
+Don't wait until the $11^{th}$ step to start meditating.
+For alcoholics, the greatest benefit of meditation is the ability to quiet the ego through focus on the body in the moment.
+The ego tells stories, and stories require the past of the future;
+focusing on the present there \textit{automatically} reduces the influence of the ego.
+Focusing on the body draws attention away from our thoughts.
+
+\actionspacing
+
+\action{Practice Acceptance} \\
+\noindent
+Demanding that the world be a certain way --
+or believing you would be happy if only some external conditions were met --
+may be the most common form of self-will.
+The truth is that you will not be happy until you learn to accept life life's terms.
+
+When faced with a situation that you find unpleasant,
+she recommends saying ``this, too, I can accept.'' 
+It's difficult and requires practice to learn to employ this tactic.
+I highly recommend reading Tara Brach's \textit{Radical Acceptance} when you start practicing your third step.
+
+\actionspacing
+
+\action{Do the Fourth Step} \\
+\noindent
+If you work a \textit{perfect} $3^{rd}$ step -- 
+completely turning over you will --
+the rest of the steps wouldn't be necessary.
+But you can't work a perfect $3^{rd}$,
+so keep trying and move forward! 
+Think of step $3$ as a decision to turn over your will
+\textit{by doing the rest of the steps}
+
+\end{multicols}
+
+\hrule
+
+\dotfillcolstt{\action{Symptoms of self-will}}{\action{Signs that you are turning your will over}}
+
+\begin{multicols}{2}
+\subsection*{Symptoms of self-will}
+You are getting upset
+You are telling endless stories in your head \\
+You are justifying your actions -- to yourself or others \\
+You're making a lot of plans \\
+You think you can -- or should -- handle everything alone \\
+You argue with or reject the suggestions of others
+\columnbreak
+\subsection*{Signs that you are turning your will over}
+You are calm. \\ 
+You are not plagued by stories. \\
+You feel no need to justify you actions. \\
+You are focused on the \textit{next} right thing. \\
+You are open to help. \\
+you can let go and take suggestions without fear.
+\end{multicols}
+
+\end{document}
