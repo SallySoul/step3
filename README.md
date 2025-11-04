@@ -18,7 +18,7 @@ I am re-distributing the original pdf in this repository to help share it,
 and provide redundancy against the changing landscape of the internet.
 
 ## `step3_classic.tex` and `step3_classic_v1.pdf`
-Given that the original document was a pdf with a source, 
+Given that the original document was a pdf without source, 
 I recreated it as best I could in [LaTeX](https://www.latex-project.org).
 In this way, I hope to make it easier for future readers 
 to modify and share the message of this document.
@@ -29,7 +29,8 @@ my intent is for the language to exactly match the original.
 My home group is a free-thought group, we do not endorse any form of religion or atheism.
 Our primary purpose to stay sober and help other achoholics to achieve sobriety.
 As such, I wanted to adapt the original document to match the language of my home group as well as my own experience.
-There are some subtle changes, like mention of god and pronouns. 
+There are some subtle changes, like replacing "God" with "Higher Power"
+and updating pronouns. 
 The largest change is the removal of the original "Pray" section with a new "Practice Willingness" section.
 
 ## License
