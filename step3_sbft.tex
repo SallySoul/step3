@@ -39,14 +39,6 @@
 % Formatting for numbers with superscript
 \usepackage[super]{nth}
 
-% Allows us to have a footnote without a key
-\newcommand\blfootnote[1]{%
-  \begingroup
-  \renewcommand\thefootnote{}\footnote{#1}%
-  \addtocounter{footnote}{-1}%
-  \endgroup
-}
-
 % Define a macro for full-width dot fill with a tab stop at column 2
 \newcommand{\dotfillcols}[2]{%
   \noindent
@@ -207,6 +199,7 @@ Think of step 3 as a decision to turn over your will
 \dotfillcols{You think you can -- or should -- handle everything alone.}{You are open to help.}
 \dotfillcols{You argue with or reject the suggestions of others.}{you can let go and take suggestions without fear.}
 
+% Footnote without a key
 \begingroup
 \renewcommand\thefootnote{}\footnote{\verb|step3_sbft_v1.pdf| -- See \href{https://github.com/SallySoul/step3}{github.com/SallySoul/step3} for more information.}
 \addtocounter{footnote}{-1}
