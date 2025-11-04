@@ -1,5 +1,6 @@
 \documentclass[9pt]{extarticle}
 
+
 % Set margins
 \usepackage[
   letterpaper,
@@ -10,10 +11,14 @@
 ]{geometry}
 \setlength{\parindent}{20pt}
 
+\usepackage[none]{hyphenat}
+
 % No page number
 \pagenumbering{gobble}
 
-%\lfoot{ \verb|step3_classic_v1.pdf| testing}
+%\lfoot{  testing}
+\usepackage{fancyvrb}
+\VerbatimFootnotes
 
 % For multi-column environment
 \usepackage{multicol}
@@ -72,7 +77,7 @@ To deflate your ego, you must practice
 \textbf{relinquishing control and letting go of stories}.
 
 Quieting the influence of your ego will feel unnatural
-and uncomfortable, and it will take conscious effot at first.
+and uncomfortable, and it will take conscious effort at first.
 But over time, through \textbf{PRACTICE}, it will get easier, 
 and eventually it will become second nature.
 
@@ -101,7 +106,7 @@ The power you take away from your ego will bring relief.
 You may hear some crazy suggestions, but don't try to use those as evidence that taking suggestions is a bad idea in general;
 try to stick to those suggestions you hear a lot.
 Remember that shopping around for the piece of advice that you \textit{want} to hear 
--- to justify what you've already decided to do -- is just another form of alchoholic self-will.
+-- to justify what you've already decided to do -- is just another form of alcoholic self-will.
 
 Getting a sponsor formalized the process of taking suggestions,
 providing you with a person whose suggestions you agreed to take especially seriously.
@@ -147,7 +152,7 @@ Focusing on the body draws attention away from our thoughts.
 Demanding that the world be a certain way --
 or believing you would be happy if only some external conditions were met --
 may be the most common form of self-will.
-The truth is that you will not be happy until you learn to accept life life's terms.
+The truth is that you will not be happy until you learn to accept life on life's terms.
 
 When faced with a situation that you find unpleasant,
 she recommends saying ``this, too, I can accept.'' 
@@ -180,7 +185,9 @@ Think of step 3 as a decision to turn over your will
 \dotfillcols{You think you can -- or should -- handle everything alone.}{You are open to help.}
 \dotfillcols{You argue with or reject the suggestions of others.}{you can let go and take suggestions without fear.}
 
-
-
+\begingroup
+\renewcommand\thefootnote{}\footnote{\verb|step3_classic_v1.pdf| testing}
+\addtocounter{footnote}{-1}
+\endgroup
 
 \end{document}
