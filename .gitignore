@@ -1,8 +1,8 @@
 *.aux
 *.log
-*.pdf
 *.DS_STORE
 *.cls
 *.fls
 *.fdb_latexmk
+*.out
 *auto
