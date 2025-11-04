@@ -23,7 +23,7 @@ I recreated it as best I could in [LaTeX](https://www.latex-project.org).
 In this way, I hope to make it easier for future readers 
 to modify and share the message of this document.
 This is not a pixel-perfect match of the original, but
-my intent is for the language to exactly match exactly.
+my intent is for the language to match exactly.
 
 ## `step3_sbft.tex` and `step3_sbft_v1.pdf`
 My home group is a free-thought group, we do not endorse any form of religion or atheism.
