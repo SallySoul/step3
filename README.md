@@ -17,7 +17,7 @@ and it reflects communal wisdom built over many years.
 I am re-distributing the original pdf in this repository to help share it, 
 and provide redundancy against the changing landscape of the internet.
 
-## `step3_classic.tex` and `step3_classic_v1.pdf`
+## `step3_classic.pdf`
 Given that the original document was a pdf without source, 
 I recreated it as best I could in [LaTeX](https://www.latex-project.org).
 In this way, I hope to make it easier for future readers 
@@ -25,7 +25,7 @@ to modify and share the message of this document.
 This is not a pixel-perfect match of the original, but
 my intent is for the language to match exactly.
 
-## `step3_sbft.tex` and `step3_sbft_v1.pdf`
+## `step3_sbft.pdf`
 My home group is a free-thought group, we do not endorse any form of religion or atheism.
 Our primary purpose to stay sober and help other alcoholics to achieve sobriety.
 As such, I wanted to adapt the original document to match the language of my home group as well as my own experience.
