@@ -26,14 +26,29 @@ This is not a pixel-perfect match of the original, but
 my intent is for the language to match exactly.
 
 ## `step3_sbft.pdf`
-My home group is a free-thought group, we do not endorse any form of religion or atheism.
+My home group is [Stony Brook Freethinkers](https://sbfreethinkers.org). 
+As a free-thought group we do not endorse any form of religion or atheism.
 Our primary purpose to stay sober and help other alcoholics to achieve sobriety.
-As such, I wanted to adapt the original document to match the language of my home group as well as my own experience.
-There are some subtle changes, like replacing "God" with "Higher Power"
-and updating pronouns. 
+I adapted the classic document to reflect my own experience 
+and make it more accessible to my group.
+There are some subtle changes, 
+like replacing "God" with "Higher Power" and updating pronouns. 
 The largest change is the removal of the original "Pray" section with a new "Practice Willingness" section.
 
-## License
+## License 
 
-These documents are available freely to those who need them. 
-Please abide by the traditions, these documents are not to be used for profit.
+These documents are available freely to those who need them.
+I request that attribution is made to this repository 
+or the Emotional Sobriety and Food blog.
+Please abide by the traditions, 
+these documents are not to be used for profit.
+
+## How do I edit these documents? 
+
+The `*.tex` files are the source code for their respective pdf files.
+If you have never used LaTeX before, consider trying [Overleaf](https://www.overleaf.com), 
+its a free site for editing LaTeX documents with a familiar interface.
+Simply paste a tex file from this repository into an overleaf project.
+Otherwise, I prefer `latexmk --pdf <title>.tex`.
+
+
